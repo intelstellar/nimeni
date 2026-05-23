@@ -35,7 +35,7 @@
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 20px;
             z-index: 1000;
             transition: all 0.3s ease;
         }
@@ -44,19 +44,10 @@
             opacity: 0.8;
             transform: scale(1.05);
         }
-
-        iframe {
-            filter: none;
-            transition: filter 0.3s ease;
-        }
-
-        html.dark-mode iframe {
-            filter: invert(0.93) hue-rotate(180deg);
-        }
     </style>
 </head>
 <body>
-    <button class="theme-switcher" id="themeToggle">🌙 Dark Mode</button>
+    <button class="theme-switcher" id="themeToggle">🌙</button>
 
     fka (oldest to latest):<br>
     selftek -> skiesphere -> selensphere -> lenspherical -> hatsukoishi -> rurikawa3 -> kiriezi -> kiriere. -> liriere -> koidashi -> hiriere -> nanoxoxo -> nanosoft -> wavec
@@ -67,11 +58,11 @@
     
     <br><br>
 
-    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=514537703/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://parannoul.bandcamp.com/album/to-see-the-next-part-of-the-dream">To See the Next Part of the Dream by Parannoul</a></iframe>
-    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3290504340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://cq-band-jp.bandcamp.com/album/communication-cultural-curiosity-quotient-2024-remastered">Communication,Cultural,Curiosity Quotient. -2024 Remastered- by CQ Band JP</a></iframe>
-    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=357073096/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://goreshit.bandcamp.com/album/steppa">steppa by goreshit</a></iframe>
-    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2350190403/size=large/bgcol=ffffff/linkcol=0687f5/track=2955052642/transparent=true/" seamless><a href="https://sewerslvt.bandcamp.com/album/we-had-good-times-together-dont-forget-that">we had good times together, don&#39;t forget that by Sewerslvt</a></iframe>
-    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1496503449/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://kudaranai1nichi.bandcamp.com/album/rebound">rebound by kudaranai 1nichi</a></iframe>
+    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=514537703/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://khruangbin.bandcamp.com/album/mordechai">Mordechai by Khruangbin</a></iframe>
+    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3290504340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://khruangbin.bandcamp.com/album/con-todo-el-mundo">Con Todo El Mundo by Khruangbin</a></iframe>
+    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=357073096/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://earth-island.bandcamp.com/album/two">Two by Earth Island</a></iframe>
+    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2350190403/size=large/bgcol=ffffff/linkcol=0687f5/track=2955052642/transparent=true/" seamless><a href="https://slowdive.bandcamp.com/album/souvlaki">Souvlaki by Slowdive</a></iframe>
+    <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1496503449/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://warpaint.bandcamp.com/album/warpaint">Warpaint by Warpaint</a></iframe>
 
     <script>
         const themeToggle = document.getElementById('themeToggle');
@@ -81,18 +72,18 @@
         const savedTheme = localStorage.getItem('theme') || 'light';
         if (savedTheme === 'dark') {
             htmlElement.classList.add('dark-mode');
-            themeToggle.textContent = '☀️ Light Mode';
+            themeToggle.textContent = '☀️';
         }
 
         // Xử lý sự kiện click vào nút
         themeToggle.addEventListener('click', () => {
             if (htmlElement.classList.contains('dark-mode')) {
                 htmlElement.classList.remove('dark-mode');
-                themeToggle.textContent = '🌙 Dark Mode';
+                themeToggle.textContent = '🌙';
                 localStorage.setItem('theme', 'light');
             } else {
                 htmlElement.classList.add('dark-mode');
-                themeToggle.textContent = '☀️ Light Mode';
+                themeToggle.textContent = '☀️';
                 localStorage.setItem('theme', 'dark');
             }
         });
