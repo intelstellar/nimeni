@@ -44,14 +44,6 @@
             opacity: 0.8;
             transform: scale(1.05);
         }
-
-        .bandcamp-player {
-            display: inline-block;
-        }
-
-        .bandcamp-player.hidden {
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -67,51 +59,54 @@
     <br><br>
 
     <!-- Player 1 -->
-    <div class="bandcamp-container" data-index="0">
-        <iframe class="bandcamp-player light-mode" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=514537703/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://parannoul.bandcamp.com/album/to-see-the-next-part-of-the-dream">To See the Next Part of the Dream by Parannoul</a></iframe>
-        <iframe class="bandcamp-player dark-mode hidden" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=514537703/size=large/bgcol=000001/linkcol=0f91ff/transparent=true/" seamless><a href="https://parannoul.bandcamp.com/album/to-see-the-next-part-of-the-dream">To See the Next Part of the Dream by Parannoul</a></iframe>
-    </div>
-
+    <iframe id="player-0" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=514537703/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://parannoul.bandcamp.com/album/to-see-the-next-part-of-the-dream">To See the Next Part of the Dream by Parannoul</a></iframe>
+    
     <!-- Player 2 -->
-    <div class="bandcamp-container" data-index="1">
-        <iframe class="bandcamp-player light-mode" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3290504340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://cq-band-jp.bandcamp.com/album/communication-cultural-curiosity-quotient-2024-remastered">Communication,Cultural,Curiosity Quotient. -2024 Remastered- by CQ Band JP</a></iframe>
-        <iframe class="bandcamp-player dark-mode hidden" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3290504340/size=large/bgcol=000001/linkcol=0f91ff/tracklist=true/transparent=true/" seamless><a href="https://cq-band-jp.bandcamp.com/album/communication-cultural-curiosity-quotient-2024-remastered">Communication,Cultural,Curiosity Quotient. -2024 Remastered- by CQ Band JP</a></iframe>
-    </div>
-
+    <iframe id="player-1" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3290504340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://cq-band-jp.bandcamp.com/album/communication-cultural-curiosity-quotient-2024-remastered">Communication,Cultural,Curiosity Quotient. -2024 Remastered- by CQ Band JP</a></iframe>
+    
     <!-- Player 3 -->
-    <div class="bandcamp-container" data-index="2">
-        <iframe class="bandcamp-player light-mode" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=357073096/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://goreshit.bandcamp.com/album/steppa">steppa by goreshit</a></iframe>
-        <iframe class="bandcamp-player dark-mode hidden" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=357073096/size=large/bgcol=000001/linkcol=0f91ff/tracklist=true/transparent=true/" seamless><a href="https://goreshit.bandcamp.com/album/steppa">steppa by goreshit</a></iframe>
-    </div>
-
+    <iframe id="player-2" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=357073096/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/" seamless><a href="https://goreshit.bandcamp.com/album/steppa">steppa by goreshit</a></iframe>
+    
     <!-- Player 4 -->
-    <div class="bandcamp-container" data-index="3">
-        <iframe class="bandcamp-player light-mode" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2350190403/size=large/bgcol=ffffff/linkcol=0687f5/track=2955052642/transparent=true/" seamless><a href="https://sewerslvt.bandcamp.com/album/we-had-good-times-together-dont-forget-that">we had good times together, don't forget that by Sewerslvt</a></iframe>
-        <iframe class="bandcamp-player dark-mode hidden" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2350190403/size=large/bgcol=000001/linkcol=0f91ff/track=2955052642/transparent=true/" seamless><a href="https://sewerslvt.bandcamp.com/album/we-had-good-times-together-dont-forget-that">we had good times together, don't forget that by Sewerslvt</a></iframe>
-    </div>
-
+    <iframe id="player-3" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2350190403/size=large/bgcol=ffffff/linkcol=0687f5/track=2955052642/transparent=true/" seamless><a href="https://sewerslvt.bandcamp.com/album/we-had-good-times-together-dont-forget-that">we had good times together, don't forget that by Sewerslvt</a></iframe>
+    
     <!-- Player 5 -->
-    <div class="bandcamp-container" data-index="4">
-        <iframe class="bandcamp-player light-mode" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1496503449/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://kudaranai1nichi.bandcamp.com/album/rebound">rebound by kudaranai 1nichi</a></iframe>
-        <iframe class="bandcamp-player dark-mode hidden" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1496503449/size=large/bgcol=000001/linkcol=0f91ff/transparent=true/" seamless><a href="https://kudaranai1nichi.bandcamp.com/album/rebound">rebound by kudaranai 1nichi</a></iframe>
-    </div>
+    <iframe id="player-4" style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=1496503449/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://kudaranai1nichi.bandcamp.com/album/rebound">rebound by kudaranai 1nichi</a></iframe>
 
     <script>
         const themeToggle = document.getElementById('themeToggle');
         const htmlElement = document.documentElement;
 
-        // Function to update bandcamp players based on theme
-        function updateBandcampPlayers(isDarkMode) {
-            const lightPlayers = document.querySelectorAll('.bandcamp-player.light-mode');
-            const darkPlayers = document.querySelectorAll('.bandcamp-player.dark-mode');
-
-            if (isDarkMode) {
-                lightPlayers.forEach(player => player.classList.add('hidden'));
-                darkPlayers.forEach(player => player.classList.remove('hidden'));
-            } else {
-                lightPlayers.forEach(player => player.classList.remove('hidden'));
-                darkPlayers.forEach(player => player.classList.add('hidden'));
+        // Define player data with light and dark mode URLs
+        const playerData = [
+            {
+                light: "https://bandcamp.com/EmbeddedPlayer/album=514537703/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/",
+                dark: "https://bandcamp.com/EmbeddedPlayer/album=514537703/size=large/bgcol=000001/linkcol=0f91ff/transparent=true/"
+            },
+            {
+                light: "https://bandcamp.com/EmbeddedPlayer/album=3290504340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/",
+                dark: "https://bandcamp.com/EmbeddedPlayer/album=3290504340/size=large/bgcol=000001/linkcol=0f91ff/tracklist=true/transparent=true/"
+            },
+            {
+                light: "https://bandcamp.com/EmbeddedPlayer/album=357073096/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/transparent=true/",
+                dark: "https://bandcamp.com/EmbeddedPlayer/album=357073096/size=large/bgcol=000001/linkcol=0f91ff/tracklist=true/transparent=true/"
+            },
+            {
+                light: "https://bandcamp.com/EmbeddedPlayer/album=2350190403/size=large/bgcol=ffffff/linkcol=0687f5/track=2955052642/transparent=true/",
+                dark: "https://bandcamp.com/EmbeddedPlayer/album=2350190403/size=large/bgcol=000001/linkcol=0f91ff/track=2955052642/transparent=true/"
+            },
+            {
+                light: "https://bandcamp.com/EmbeddedPlayer/album=1496503449/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/",
+                dark: "https://bandcamp.com/EmbeddedPlayer/album=1496503449/size=large/bgcol=000001/linkcol=0f91ff/transparent=true/"
             }
+        ];
+
+        // Function to update all bandcamp players
+        function updateBandcampPlayers(isDarkMode) {
+            playerData.forEach((player, index) => {
+                const iframe = document.getElementById(`player-${index}`);
+                iframe.src = isDarkMode ? player.dark : player.light;
+            });
         }
 
         // Kiểm tra chế độ đã lưu trong localStorage
